@@ -1,237 +1,282 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>W3.CSS Template</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body {font-family: "Lato", sans-serif}
-.mySlides {display: none}
-</style>
-<body>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"    content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author"      content="Sergey Pozhilov (GetTemplate.com)">
+	
+	<title>Camila G.</title>
 
-<!-- Navbar -->
-<div class="w3-top">
-  <div class="w3-bar w3-black w3-card">
-    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
-    <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">BAND</a>
-    <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">TOUR</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
-    <div class="w3-dropdown-hover w3-hide-small">
-      <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
-      <div class="w3-dropdown-content w3-bar-block w3-card-4">
-        <a href="#" class="w3-bar-item w3-button">Merchandise</a>
-        <a href="#" class="w3-bar-item w3-button">Extras</a>
-        <a href="#" class="w3-bar-item w3-button">Media</a>
-      </div>
-    </div>
-    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
-  </div>
-</div>
+	<link rel="shortcut icon" href="assets/images/favicon_io/favicon.ico">
+	
+	<!-- Bootstrap -->
+	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.no-icons.min.css" rel="stylesheet">
+	<!-- Icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- Fonts -->
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Alice|Open+Sans:400,300,700">
+	<!-- Custom styles -->
+	<link rel="stylesheet" href="assets/css/styles.css">
 
-<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
-<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-  <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BAND</a>
-  <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TOUR</a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
-  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
-</div>
+	<!--[if lt IE 9]> <script src="assets/js/html5shiv.js"></script> <![endif]-->
+</head>
+<body class="home">
 
-<!-- Page content -->
-<div class="w3-content" style="max-width:2000px;margin-top:46px">
+<header id="header">
+	<div id="head" class="parallax" parallax-speed="2">
+		<h1 id="logo" class="text-center">
+			<img class="img-circle" src="assets/images/GonzalezCamila_small.png" alt="">
+			<span class="title">Camila González</span>
+			<span class="tagline">PhD candidate at <a href="https://www.tu-darmstadt.de/index.en.jsp">TU Darmstadt</a>, <a href="https://www.informatik.tu-darmstadt.de/gris/forschung_1/medical_computing/index.de.jsp">MECLabTUDA</a></span>
+		</h1>
+	</div>
 
-  <!-- Automatic Slideshow Images -->
-  <div class="mySlides w3-display-container w3-center">
-    <img src="w3images/la.jpg" style="width:100%">
-    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3>Los Angeles</h3>
-      <p><b>We had the best time playing at Venice Beach!</b></p>   
-    </div>
-  </div>
-  <div class="mySlides w3-display-container w3-center">
-    <img src="w3images/la.jpg" style="width:100%">
-    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3>New York</h3>
-      <p><b>The atmosphere in New York is lorem ipsum.</b></p>    
-    </div>
-  </div>
-  <div class="mySlides w3-display-container w3-center">
-    <img src="w3images/la.jpg" style="width:100%">
-    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3>Chicago</h3>
-      <p><b>Thank you, Chicago - A night we won't forget.</b></p>    
-    </div>
-  </div>
+	<nav class="navbar navbar-default navbar-sticky">
+		<div class="container-fluid">
+			
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+			</div>
+			
+			<div class="navbar-collapse collapse">
+				
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="index.html">Home</a></li>
+					<!--
+					<li><a href="recent_work.html">Recent work</a></li>
+					<li><a href="blog.html">Blog</a></li>-->
+				</ul>
+			
+			</div><!--/.nav-collapse -->			
+		</div>	
+	</nav>
+</header>
 
-  <!-- The Band Section -->
-  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
-    <h2 class="w3-wide">THE BAND</h2>
-    <p class="w3-opacity"><i>We love music</i></p>
-    <p class="w3-justify">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
-      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    <div class="w3-row w3-padding-32">
-      <div class="w3-third">
-        <p>Name</p>
-        <img src="w3images/bandmember.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
-      </div>
-      <div class="w3-third">
-        <p>Name</p>
-        <img src="w3images/bandmember.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
-      </div>
-      <div class="w3-third">
-        <p>Name</p>
-        <img src="w3images/bandmember.jpg" class="w3-round" alt="Random Name" style="width:60%">
-      </div>
-    </div>
-  </div>
+<main id="main">
 
-  <!-- The Tour Section -->
-  <div class="w3-black" id="tour">
-    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
-      <h2 class="w3-wide w3-center">TOUR DATES</h2>
-      <p class="w3-opacity w3-center"><i>Remember to book your tickets!</i></p><br>
+	<div class="container">
+		
+		<div class="row section topspace">
+			<div class="col-md-12">
+				<p class="lead text-center text-muted">My PhD focuses on Continual Learning and Out-of-distribution detection for magnetic resonance images (MRIs) and computer tomography (CT) scans. Due to differences in the acquisition process across -and even within- medical institutions, this data often suffers from domain shift. Deep Learning models which are not trained specifically to deal with multi-domain data behave unreliably when applied to out-of-distribution images. My goal is to facilitate the use of Deep learning models for both segmentation and classification/detection in clinical multi-institutional settings. </p>
+			</div>
+		</div> <!-- / section -->
+		
 
-      <ul class="w3-ul w3-border w3-white w3-text-grey">
-        <li class="w3-padding">September <span class="w3-tag w3-red w3-margin-left">Sold out</span></li>
-        <li class="w3-padding">October <span class="w3-tag w3-red w3-margin-left">Sold out</span></li>
-        <li class="w3-padding">November <span class="w3-badge w3-right w3-margin-right">3</span></li>
-      </ul>
+	
+		<div class="row section recentworks topspace">
+			
+			<h2 class="section-title"><span>Recent Work</span></h2>
+			
+			<div class="thumbnails recentworks row">
+				
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+					<a class="thumbnail" href="https://arxiv.org/abs/2201.05650">
+						<span class="img">
+							<img src="assets/images/papers/ISBI2022.jpg" alt="">
+							<span class="cover"><span class="more">Read more &rarr;</span></span>
+						</span>
+					</a>
+				</ul>
+				<div class="blogexcerpt">
+				  <time datetime="2045-04-05T08:15+00:00">14 Jan 2022</time>
+				  <p class="heading"><a href="https://arxiv.org/abs/2201.05650">Disentanglement enables cross-domain Hippocampus Segmentation</a></p>
+				</div>
+				</div>
+				
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+					<a class="thumbnail" href="https://arxiv.org/abs/2112.08974">
+						<span class="img">
+							<img src="assets/images/papers/BVM2022.png" alt="">
+							<span class="cover"><span class="more">Read more &rarr;</span></span>
+						</span>
+					</a>
+				</ul>
+				<div class="blogexcerpt">
+				  <time datetime="2045-04-05T08:15+00:00">16 Dec 2021</time>
+				  <p class="heading"><a href="https://arxiv.org/abs/2112.08974">Quality monitoring of federated Covid-19 lesion segmentation</a></p>
+				</div>
+				</div>
+				
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+					<a class="thumbnail" href="https://dps2021.rsna.org/exhibit/?exhibit=INEE-31">
+						<span class="img">
+							<img src="assets/images/papers/RSNA2021.PNG" alt="">
+							<span class="cover"><span class="more">Read more &rarr;</span></span>
+						</span>
+					</a>
+				</ul>
+				<div class="blogexcerpt">
+				  <time datetime="2045-04-05T08:15+00:00">29 Nov 2021</time>
+				  <p class="heading"><a href="https://dps2021.rsna.org/exhibit/?exhibit=INEE-31">Continual Learning for Diagnostic Radiology</a></p>
+				</div>
+				</div>
 
-      <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
-        <div class="w3-third w3-margin-bottom">
-          <img src="w3images/newyork.jpg" alt="New York" style="width:100%" class="w3-hover-opacity">
-          <div class="w3-container w3-white">
-            <p><b>New York</b></p>
-            <p class="w3-opacity">Fri 27 Nov 2016</p>
-            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
-          </div>
-        </div>
-        <div class="w3-third w3-margin-bottom">
-          <img src="w3images/paris.jpg" alt="Paris" style="width:100%" class="w3-hover-opacity">
-          <div class="w3-container w3-white">
-            <p><b>Paris</b></p>
-            <p class="w3-opacity">Sat 28 Nov 2016</p>
-            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
-          </div>
-        </div>
-        <div class="w3-third w3-margin-bottom">
-          <img src="w3images/sanfran.jpg" alt="San Francisco" style="width:100%" class="w3-hover-opacity">
-          <div class="w3-container w3-white">
-            <p><b>San Francisco</b></p>
-            <p class="w3-opacity">Sun 29 Nov 2016</p>
-            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+					<a class="thumbnail" href="https://arxiv.org/abs/2109.01668">
+						<span class="img">
+							<img src="assets/images/papers/GCPR2021.PNG" alt="">
+							<span class="cover"><span class="more">Read more &rarr;</span></span>
+						</span>
+					</a>
+				</ul>
+				<div class="blogexcerpt">
+				  <time datetime="2045-04-05T08:15+00:00">03 Sep 2021</time>
+				  <p class="heading"><a href="https://arxiv.org/abs/2109.01668">How Reliable Are Out-of-Distribution Generalization Methods for Medical Image Segmentation?</a></p>
+				</div>
+				</div>
 
-  <!-- Ticket Modal -->
-  <div id="ticketModal" class="w3-modal">
-    <div class="w3-modal-content w3-animate-top w3-card-4">
-      <header class="w3-container w3-teal w3-center w3-padding-32"> 
-        <span onclick="document.getElementById('ticketModal').style.display='none'" 
-       class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
-        <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Tickets</h2>
-      </header>
-      <div class="w3-container">
-        <p><label><i class="fa fa-shopping-cart"></i> Tickets, $15 per person</label></p>
-        <input class="w3-input w3-border" type="text" placeholder="How many?">
-        <p><label><i class="fa fa-user"></i> Send To</label></p>
-        <input class="w3-input w3-border" type="text" placeholder="Enter email">
-        <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">PAY <i class="fa fa-check"></i></button>
-        <button class="w3-button w3-red w3-section" onclick="document.getElementById('ticketModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
-        <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
-      </div>
-    </div>
-  </div>
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+					<a class="thumbnail" href="https://arxiv.org/abs/2107.08751">
+						<span class="img">
+							<img src="assets/images/papers/MICCAI_DART2021.PNG" alt="">
+							<span class="cover"><span class="more">Read more &rarr;</span></span>
+						</span>
+					</a>
+				</ul>
+				<div class="blogexcerpt">
+				  <time datetime="2045-04-05T08:15+00:00">19 Jul 2022</time>
+				  <p class="heading"><a href="https://arxiv.org/abs/2107.08751">Adversarial Continual Learning for Multi-Domain Hippocampal Segmentation</a></p>
+				</div>
+				</div>
+				
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+					<a class="thumbnail" href="https://arxiv.org/abs/2107.05975">
+						<span class="img">
+							<img src="assets/images/papers/MICCAI2021.PNG" alt="">
+							<span class="cover"><span class="more">Read more &rarr;</span></span>
+						</span>
+					</a>
+				</ul>
+				<div class="blogexcerpt">
+				  <time datetime="2045-04-05T08:15+00:00">13 Jul 2022</time>
+				  <p class="heading"><a href="https://arxiv.org/abs/2107.05975">Detecting when pre-trained nnU-Net models fail silently for Covid-19 lung lesion segmentation</a></p>
+				</div>
+				</div>
 
-  <!-- The Contact Section -->
-  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
-    <h2 class="w3-wide w3-center">CONTACT</h2>
-    <p class="w3-opacity w3-center"><i>Fan? Drop a note!</i></p>
-    <div class="w3-row w3-padding-32">
-      <div class="w3-col m6 w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker" style="width:30px"></i> Chicago, US<br>
-        <i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br>
-        <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
-      </div>
-      <div class="w3-col m6">
-        <form action="/action_page.php" target="_blank">
-          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-            <div class="w3-half">
-              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-            </div>
-            <div class="w3-half">
-              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
-            </div>
-          </div>
-          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-          <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
-        </form>
-      </div>
-    </div>
-  </div>
-  
-<!-- End Page Content -->
-</div>
+			</div>
 
-<!-- Image of location/map -->
-<img src="w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">
+		</div> <!-- /section -->
 
-<!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
-  <i class="fa fa-facebook-official w3-hover-opacity"></i>
-  <i class="fa fa-instagram w3-hover-opacity"></i>
-  <i class="fa fa-snapchat w3-hover-opacity"></i>
-  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-  <i class="fa fa-twitter w3-hover-opacity"></i>
-  <i class="fa fa-linkedin w3-hover-opacity"></i>
-  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+		<div class="row section featured topspace">
+			<h2 class="section-title"><span>Involvement</span></h2>
+			<div class="row">
+				<div class="col-sm-6 col-md-3">
+					<h3 class="text-center">EVA-KI</h3>
+					<p>The EVA-KI project aims to establish a platform for the development and validation of AI solutions in the clinical routine. Lifelong learning is a central topic for this project, and we explore regulatory and economic obstacles for continuously adaptive models.</p>
+					<p class="text-center"><a href="https://ai-health.care/eva-ki" class="btn btn-action">Learn more</a></p>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<h3 class="text-center">RACOON</h3>
+					<p>All university radiology departments in Germany are partners in this collaborative project, which will be the first of this magnitude a nationwide infrastructure for the structured acquisition of radiological Covid-19 cases.</p>
+					<p class="text-center"><a href="https://racoon.network/" class="btn btn-action">Learn more</a></p>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<h3 class="text-center">MSB</h3>
+					<p>I am delighted to serve this term as president of the MICCAI Student Board (MSB). The MSB represents student interests within the MICCAI society, and aims to stimulate the involvement of students within the MICCAI community and facilitate networking.</p>
+					<p class="text-center"><a href="https://miccai-sb.github.io/organization.html" class="btn btn-action">Learn more</a></p>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<h3 class="text-center">Teaching</h3>
+					<p>Together with Prof. Georg Sakas, I teach the TU Darmstadt lectures Image Processing (Sommer term) and Medical Image Processing (Winter term). I also regularly supervise students for Computer Vision Praktikum projects and Bachelor and Master thesis.</p>
+					<p class="text-center"><a href="https://www.informatik.tu-darmstadt.de/gris/startseite_1/lehre_8/lehre_4.de.jsp" class="btn btn-action">Learn more</a></p>
+				</div>
+			</div>
+		</div> <!-- / section -->
+
+		<div class="row section topspace">
+			<div class="panel panel-cta"><div class="panel-body">
+				<div class="col-lg-8">
+					<p><b>Contact me</b> is you are interested in my work and are looking to start a collaboration or are seeking supervision at the TU Darmstadt or partner institutions. </p>
+				</div>
+				<div class="col-lg-4 text-right">
+					<a href="mailto:camila.gonzalez@gris.tu-darmstadt.de" class="btn btn-primary btn-lg">Email</a>
+				</div>
+			</div></div>
+		</div> <!-- /section -->
+
+
+	</div>	<!-- /container -->
+
+</main>
+
+<footer id="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3 widget">
+				<h3 class="widget-title">Contact</h3>
+				<div class="widget-body">
+					<p>+49 6151 155-679<br>
+						<a href="mailto:#">camila.gonzalez@gris.tu-darmstadt.de</a><br>
+						<br>
+						<!--Technische Universität Darmstadt GRIS Fraunhoferstr. 5, 64283 Darmstadt -->
+					</p>	
+				</div>
+			</div>
+
+			<div class="col-md-3 widget">
+				<h3 class="widget-title">Follow me</h3>
+				<div class="widget-body">
+					<p class="follow-me-icons">
+						<a href="https://twitter.com/camgbus"><i class="fa fa-twitter fa-2"></i></a>
+						<a href="https://de.linkedin.com/in/camila-gonz%C3%A1lez-618a5b188"><i class="fa fa-linkedin fa-2"></i></a>
+						<a href="https://github.com/MECLabTUDA"><i class="fa fa-github fa-2"></i></a>
+						<a href="https://scholar.google.com/citations?user=VbpLc7YAAAAJ&hl=en"><i class="fa fa-university fa-2"></i></a>
+					</p>
+				</div>
+			</div>
+
+			<!--<div class="col-md-3 widget">
+				<h3 class="widget-title">Text widget</h3>
+				<div class="widget-body">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, nihil natus explicabo ipsum quia iste aliquid repellat eveniet velit ipsa sunt libero sed aperiam id soluta officia asperiores adipisci maxime!</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, nihil natus explicabo ipsum quia iste aliquid repellat eveniet velit ipsa sunt libero sed aperiam id soluta officia asperiores adipisci maxime!</p>
+				</div>
+			</div>
+
+			<div class="col-md-3 widget">
+				<h3 class="widget-title">Form widget</h3>
+				<div class="widget-body">
+					<p>+49 6151 155-679<br>
+						<a href="mailto:#">camila.gonzalez@gris.tu-darmstadt.de</a><br>
+						<br>
+						Technische Universität Darmstadt, GRIS, Fraunhoferstr. 5, 64283 Darmstadt
+					</p>	
+				</div>
+			</div>-->
+
+		</div> <!-- /row of widgets -->
+	</div>
 </footer>
 
-<script>
-// Automatic Slideshow - change image every 4 seconds
-var myIndex = 0;
-carousel();
+<footer id="underfooter">
+	<div class="container">
+		<div class="row">
+			
+			<div class="col-md-6 widget">
+				<div class="widget-body">
+					<p>Technische Universität Darmstadt, GRIS, Fraunhoferstr. 5, 64283 Darmstadt </p>
+				</div>
+			</div>
 
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 4000);    
-}
+			<div class="col-md-6 widget">
+				<div class="widget-body">
+					<p class="text-right">
+						Copyright &copy; 2022, Camila González<br> 
+						Design: <a href="http://www.gettemplate.com" rel="designer">Initio by GetTemplate</a> </p>
+				</div>
+			</div>
 
-// Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
+		</div> <!-- /row of widgets -->
+	</div>
+</footer>
 
-// When the user clicks anywhere outside of the modal, close it
-var modal = document.getElementById('ticketModal');
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-</script>
 
+
+<!-- JavaScript libs are placed at the end of the document so the pages load faster -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="assets/js/template.js"></script>
 </body>
 </html>
